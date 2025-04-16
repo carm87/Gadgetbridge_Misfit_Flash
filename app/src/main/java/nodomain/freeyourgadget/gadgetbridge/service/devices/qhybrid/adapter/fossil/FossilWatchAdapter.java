@@ -522,6 +522,7 @@ public class FossilWatchAdapter extends WatchAdapter {
             case "VA.0.0":
                 return true;
             case "HL.0.0":
+            case "FL.2.0":/*CARMINE*/
                 return false;
         }
         throw new UnsupportedOperationException("model " + modelNumber + " not supported");
@@ -538,6 +539,7 @@ public class FossilWatchAdapter extends WatchAdapter {
             case "DN.1.0":
             case "WA.0.0":
             case "VA.0.0":
+            case "FL.2.0":/*CARMINE*/
                 return false;
         }
         throw new UnsupportedOperationException("Model " + modelNumber + " not supported");
