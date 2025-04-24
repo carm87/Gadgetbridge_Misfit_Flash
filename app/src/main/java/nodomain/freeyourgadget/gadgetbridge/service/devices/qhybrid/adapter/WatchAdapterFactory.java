@@ -28,6 +28,7 @@ public final class WatchAdapterFactory {
         if(firmwareVersion.startsWith("IV0")) return new FossilHRWatchAdapter(deviceSupport);
         if(firmwareVersion.startsWith("VA")) return new FossilHRWatchAdapter(deviceSupport);
         if(firmwareVersion.startsWith("WA")) return new FossilHRWatchAdapter(deviceSupport);
+        if(firmwareVersion.startsWith("FL")) return new MisfitWatchAdapter(deviceSupport); //Misfit Flash
 
         char major = firmwareVersion.charAt(6);
         switch (major){
